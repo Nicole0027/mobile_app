@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade_of_green_cyan"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/edit_text_box_width"
+    android:paddingRight="@dimen/edit_text_box_width"
+    tools:context=".ChooseMap_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="Choose Your Level"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:paddingBottom="30dp"/>
+
+    <ListView
+        android:id="@+id/levelsList"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:background="@drawable/edit_list_capsule"
+       />
+
+</LinearLayout>

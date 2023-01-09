@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade_of_green_cyan"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    tools:context=".Menu_Activity">
+
+<!--Title of the screen-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:gravity="center"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menuStartButton"
+
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/edit_text_capsule"
+        android:fontFamily="@font/righteous"
+
+        android:gravity="center"
+        android:text="Start Game"
+        android:textColor="@color/shade_of_green_cyan" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menuChooseMapButton"
+
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/edit_text_capsule"
+        android:fontFamily="@font/righteous"
+
+        android:gravity="center"
+        android:text="Choose Your Map"
+        android:textColor="@color/shade_of_green_cyan" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/menuScoreboardButton"
+
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/edit_text_capsule"
+        android:fontFamily="@font/righteous"
+
+        android:text="Scoreboard"
+        android:textColor="@color/shade_of_green_cyan" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOutButton"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+
+        android:background="@drawable/edit_text_capsule"
+        android:text="Log Out"
+        android:textColor="@color/shade_of_green_cyan"
+        android:fontFamily="@font/righteous" />
+
+
+
+</LinearLayout>

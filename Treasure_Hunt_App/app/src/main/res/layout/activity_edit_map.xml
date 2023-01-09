@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade_of_green_cyan"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/edit_text_box_width"
+    android:paddingLeft="@dimen/edit_text_box_width"
+    tools:context=".EditMap_Activity"
+    android:id="@+id/editMapActivityFrame">
+
+    <TextView
+        android:id="@+id/editMapLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Edit Map"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="50dp" />
+
+    <FrameLayout
+        android:id="@+id/editPinsMapFrame"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_marginTop="5dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <EditText
+        android:id="@+id/pinCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/edit_text_box_width"
+        android:paddingVertical="@dimen/edit_text_box_height"
+        android:background="@drawable/edit_text_capsule"
+        android:hint="Enter the code"
+        android:textColorHint="@color/shade_of_green_cyan"
+        android:textColor="@color/shade_of_green_cyan"
+        android:inputType="numberDecimal"/>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButtonEditMap"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:background="@drawable/edit_text_capsule"
+            android:fontFamily="@font/righteous"
+
+            android:gravity="center"
+            android:text="Save Map"
+            android:textColor="@color/shade_of_green_cyan" />
+
+    </LinearLayout>
+
+</LinearLayout>

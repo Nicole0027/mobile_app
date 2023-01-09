@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/edit_text_box_width"
+    android:paddingLeft="@dimen/edit_text_box_width"
+    android:background="@color/shade_of_green_cyan"
+    android:orientation="vertical"
+
+    tools:context=".MapsSettings_Activity">
+
+    <TextView
+        android:id="@+id/mapsSettingsLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Maps Settings"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="50dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+    <ListView
+        android:id="@+id/mapsSettingsList"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:background="@drawable/edit_list_capsule"
+        android:dividerHeight="2dp"
+        android:divider="@color/black" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addButtonMapsSettings"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+
+            android:background="@drawable/edit_text_capsule"
+            android:fontFamily="@font/righteous"
+
+            android:gravity="center"
+            android:text="Add"
+            android:textColor="@color/shade_of_green_cyan" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="50dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteButtonMapsSettings"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:background="@drawable/edit_text_capsule"
+            android:fontFamily="@font/righteous"
+
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/shade_of_green_cyan" />
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>

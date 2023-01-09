@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/edit_text_box_width"
+    android:paddingLeft="@dimen/edit_text_box_width"
+    android:background="@color/shade_of_green_cyan"
+    android:orientation="vertical"
+    tools:context=".Scoreboard_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+
+        android:text="Scoreboard"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:paddingBottom="30dp"/>
+
+    <ListView
+        android:id="@+id/scoreList"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:background="@drawable/edit_list_capsule" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitScoreButton"
+
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:background="@drawable/edit_text_capsule"
+        android:fontFamily="@font/righteous"
+
+        android:gravity="center"
+        android:text="Exit"
+        android:textColor="@color/shade_of_green_cyan" />
+
+
+
+</LinearLayout>

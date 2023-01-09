@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shade_of_green_cyan"
+    android:paddingRight="@dimen/edit_text_box_width"
+    android:paddingLeft="@dimen/edit_text_box_width"
+    android:paddingTop="@dimen/edit_text_box_height"
+    android:orientation="vertical"
+    tools:context=".Game_Activity">
+
+
+    <FrameLayout
+        android:id="@+id/mapFrame"
+        android:layout_width="match_parent"
+        android:layout_height="375dp"
+        android:layout_marginTop="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/edit_text_box_width"
+        android:paddingVertical="@dimen/edit_text_box_height"
+        android:background="@drawable/edit_text_capsule"
+        android:hint="Enter the code"
+        android:textColorHint="@color/shade_of_green_cyan"
+        android:textColor="@color/shade_of_green_cyan"
+        android:inputType="numberDecimal"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/checkButton"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/edit_text_capsule"
+        android:fontFamily="@font/righteous"
+
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/shade_of_green_cyan" />
+    
+    
+    
+    
+    
+
+</LinearLayout>

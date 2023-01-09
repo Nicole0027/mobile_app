@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:background="@color/shade_of_green_cyan"
+    tools:context=".Login_Activity"
+    android:orientation="vertical"
+    android:id="@+id/loginActivityFrame">
+
+
+<!-- Title of the screen-->
+    <TextView
+        android:id="@+id/loginLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="50dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+
+<!--Email text field -->
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLabel"
+
+        android:paddingTop="@dimen/edit_text_box_height"
+        android:paddingBottom="@dimen/edit_text_box_height"
+        android:paddingLeft="@dimen/edit_text_box_width"
+        android:paddingRight="@dimen/edit_text_box_width"
+
+        android:gravity="left"
+        android:textColor="@color/shade_of_green_cyan"
+        android:textColorHint="@color/shade_of_green_cyan"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Your Email"
+
+        android:background="@drawable/edit_text_capsule" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+
+<!--Password text field -->
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginLabel"
+
+        android:paddingTop="@dimen/edit_text_box_height"
+        android:paddingBottom="@dimen/edit_text_box_height"
+        android:paddingLeft="@dimen/edit_text_box_width"
+        android:paddingRight="@dimen/edit_text_box_width"
+
+        android:gravity="left"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:textColor="@color/shade_of_green_cyan"
+        android:textColorHint="@color/shade_of_green_cyan"
+
+        android:background="@drawable/edit_text_capsule" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+<!--This linear layout contains the text linked to the "Sign up activity"    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need an account ? "
+            android:textColor="@color/white"
+            android:layout_weight="2"
+            android:gravity="right"/>
+
+        <TextView
+            android:id="@+id/linkToSignupActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:layout_gravity="left"
+            android:onClick="Click"/>
+        
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+<!--Login button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+        android:text="Login"
+        android:onClick="Click"
+
+        android:fontFamily="@font/righteous"
+        android:textColor="@color/shade_of_green_cyan"
+        android:background="@drawable/edit_text_capsule" />
+
+</LinearLayout>
