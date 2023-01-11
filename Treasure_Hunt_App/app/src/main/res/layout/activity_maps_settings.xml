@@ -79,6 +79,26 @@
         <Space
             android:layout_width="20dp"
             android:layout_height="50dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutButtonMapsSettings"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:background="@drawable/edit_text_capsule"
+            android:fontFamily="@font/righteous"
+
+            android:gravity="center"
+            android:text="Logout"
+            android:textColor="@color/shade_of_green_cyan" />
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="50dp"/>
     </LinearLayout>
 
 </LinearLayout>
